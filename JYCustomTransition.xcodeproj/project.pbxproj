@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		190B05D11E8226B200B37E47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B05D01E8226B200B37E47 /* main.m */; };
+		190B05D41E8226B200B37E47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B05D31E8226B200B37E47 /* AppDelegate.m */; };
+		190B05DC1E8226B200B37E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190B05DB1E8226B200B37E47 /* Assets.xcassets */; };
+		190B05DF1E8226B200B37E47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190B05DD1E8226B200B37E47 /* LaunchScreen.storyboard */; };
+		190B05EA1E8226B200B37E47 /* JYCustomTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B05E91E8226B200B37E47 /* JYCustomTransitionTests.m */; };
+		190B05F51E8226B200B37E47 /* JYCustomTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B05F41E8226B200B37E47 /* JYCustomTransitionUITests.m */; };
+		190B06041E822CC700B37E47 /* JYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B06031E822CC700B37E47 /* JYRootViewController.m */; };
+		190B06071E82304E00B37E47 /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B06061E82304E00B37E47 /* UIColor+Utilities.m */; };
+		19663ACF1E88C18600819A4E /* JYExpandedPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19663ACE1E88C18600819A4E /* JYExpandedPhotoViewController.m */; };
+		198A09B61E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 198A09B51E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.m */; };
+		198A09BA1E88CC5D007164E3 /* JYViewControllerPopImageTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 198A09B91E88CC5D007164E3 /* JYViewControllerPopImageTransitioning.m */; };
+		198A09BD1E88CE1E007164E3 /* JYViewControllerOpenDoorTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 198A09BC1E88CE1E007164E3 /* JYViewControllerOpenDoorTransitioning.m */; };
+		19B3ADBA1E8382D00082D1B5 /* JYCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3ADB91E8382D00082D1B5 /* JYCatalogViewController.m */; };
+		19B3ADBD1E8387190082D1B5 /* JYPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3ADBC1E8387190082D1B5 /* JYPhotoViewController.m */; };
+		19B3ADC01E8396FC0082D1B5 /* JYDoorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3ADBF1E8396FC0082D1B5 /* JYDoorViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		190B05E61E8226B200B37E47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190B05C41E8226B200B37E47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190B05CB1E8226B200B37E47;
+			remoteInfo = CustomTransition;
+		};
+		190B05F11E8226B200B37E47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190B05C41E8226B200B37E47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190B05CB1E8226B200B37E47;
+			remoteInfo = CustomTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		190B05CC1E8226B200B37E47 /* JYCustomTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYCustomTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		190B05D01E8226B200B37E47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		190B05D21E8226B200B37E47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		190B05D31E8226B200B37E47 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		190B05DB1E8226B200B37E47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		190B05DE1E8226B200B37E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		190B05E01E8226B200B37E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190B05E51E8226B200B37E47 /* JYCustomTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYCustomTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		190B05E91E8226B200B37E47 /* JYCustomTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYCustomTransitionTests.m; sourceTree = "<group>"; };
+		190B05EB1E8226B200B37E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190B05F01E8226B200B37E47 /* JYCustomTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYCustomTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		190B05F41E8226B200B37E47 /* JYCustomTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYCustomTransitionUITests.m; sourceTree = "<group>"; };
+		190B05F61E8226B200B37E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190B06021E822CC700B37E47 /* JYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYRootViewController.h; sourceTree = "<group>"; };
+		190B06031E822CC700B37E47 /* JYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYRootViewController.m; sourceTree = "<group>"; };
+		190B06051E82304E00B37E47 /* UIColor+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utilities.h"; sourceTree = "<group>"; };
+		190B06061E82304E00B37E47 /* UIColor+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utilities.m"; sourceTree = "<group>"; };
+		19663ACD1E88C18600819A4E /* JYExpandedPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYExpandedPhotoViewController.h; sourceTree = "<group>"; };
+		19663ACE1E88C18600819A4E /* JYExpandedPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYExpandedPhotoViewController.m; sourceTree = "<group>"; };
+		198A09B41E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JYAnimatedTransitioning.h"; sourceTree = "<group>"; };
+		198A09B51E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JYAnimatedTransitioning.m"; sourceTree = "<group>"; };
+		198A09B81E88CC5D007164E3 /* JYViewControllerPopImageTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYViewControllerPopImageTransitioning.h; sourceTree = "<group>"; };
+		198A09B91E88CC5D007164E3 /* JYViewControllerPopImageTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYViewControllerPopImageTransitioning.m; sourceTree = "<group>"; };
+		198A09BB1E88CE1E007164E3 /* JYViewControllerOpenDoorTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYViewControllerOpenDoorTransitioning.h; sourceTree = "<group>"; };
+		198A09BC1E88CE1E007164E3 /* JYViewControllerOpenDoorTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYViewControllerOpenDoorTransitioning.m; sourceTree = "<group>"; };
+		19B3ADB81E8382D00082D1B5 /* JYCatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCatalogViewController.h; sourceTree = "<group>"; };
+		19B3ADB91E8382D00082D1B5 /* JYCatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCatalogViewController.m; sourceTree = "<group>"; };
+		19B3ADBB1E8387190082D1B5 /* JYPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPhotoViewController.h; sourceTree = "<group>"; };
+		19B3ADBC1E8387190082D1B5 /* JYPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPhotoViewController.m; sourceTree = "<group>"; };
+		19B3ADBE1E8396FC0082D1B5 /* JYDoorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYDoorViewController.h; sourceTree = "<group>"; };
+		19B3ADBF1E8396FC0082D1B5 /* JYDoorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYDoorViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		190B05C91E8226B200B37E47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B05E21E8226B200B37E47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B05ED1E8226B200B37E47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		190B05C31E8226B200B37E47 = {
+			isa = PBXGroup;
+			children = (
+				190B05CE1E8226B200B37E47 /* JYCustomTransition */,
+				190B05E81E8226B200B37E47 /* JYCustomTransitionTests */,
+				190B05F31E8226B200B37E47 /* JYCustomTransitionUITests */,
+				190B05CD1E8226B200B37E47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		190B05CD1E8226B200B37E47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				190B05CC1E8226B200B37E47 /* JYCustomTransition.app */,
+				190B05E51E8226B200B37E47 /* JYCustomTransitionTests.xctest */,
+				190B05F01E8226B200B37E47 /* JYCustomTransitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		190B05CE1E8226B200B37E47 /* JYCustomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				190B05D21E8226B200B37E47 /* AppDelegate.h */,
+				190B05D31E8226B200B37E47 /* AppDelegate.m */,
+				190B05DB1E8226B200B37E47 /* Assets.xcassets */,
+				190B05DD1E8226B200B37E47 /* LaunchScreen.storyboard */,
+				190B05E01E8226B200B37E47 /* Info.plist */,
+				190B05CF1E8226B200B37E47 /* Supporting Files */,
+				190B06021E822CC700B37E47 /* JYRootViewController.h */,
+				190B06031E822CC700B37E47 /* JYRootViewController.m */,
+				19B3ADB81E8382D00082D1B5 /* JYCatalogViewController.h */,
+				19B3ADB91E8382D00082D1B5 /* JYCatalogViewController.m */,
+				19B3ADBB1E8387190082D1B5 /* JYPhotoViewController.h */,
+				19B3ADBC1E8387190082D1B5 /* JYPhotoViewController.m */,
+				19663ACD1E88C18600819A4E /* JYExpandedPhotoViewController.h */,
+				19663ACE1E88C18600819A4E /* JYExpandedPhotoViewController.m */,
+				19B3ADBE1E8396FC0082D1B5 /* JYDoorViewController.h */,
+				19B3ADBF1E8396FC0082D1B5 /* JYDoorViewController.m */,
+				190B06051E82304E00B37E47 /* UIColor+Utilities.h */,
+				190B06061E82304E00B37E47 /* UIColor+Utilities.m */,
+				198A09B71E88CC04007164E3 /* Transitioning */,
+			);
+			name = JYCustomTransition;
+			path = CustomTransition;
+			sourceTree = "<group>";
+		};
+		190B05CF1E8226B200B37E47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				190B05D01E8226B200B37E47 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		190B05E81E8226B200B37E47 /* JYCustomTransitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				190B05E91E8226B200B37E47 /* JYCustomTransitionTests.m */,
+				190B05EB1E8226B200B37E47 /* Info.plist */,
+			);
+			name = JYCustomTransitionTests;
+			path = CustomTransitionTests;
+			sourceTree = "<group>";
+		};
+		190B05F31E8226B200B37E47 /* JYCustomTransitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				190B05F41E8226B200B37E47 /* JYCustomTransitionUITests.m */,
+				190B05F61E8226B200B37E47 /* Info.plist */,
+			);
+			name = JYCustomTransitionUITests;
+			path = CustomTransitionUITests;
+			sourceTree = "<group>";
+		};
+		198A09B71E88CC04007164E3 /* Transitioning */ = {
+			isa = PBXGroup;
+			children = (
+				198A09B41E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.h */,
+				198A09B51E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.m */,
+				198A09B81E88CC5D007164E3 /* JYViewControllerPopImageTransitioning.h */,
+				198A09B91E88CC5D007164E3 /* JYViewControllerPopImageTransitioning.m */,
+				198A09BB1E88CE1E007164E3 /* JYViewControllerOpenDoorTransitioning.h */,
+				198A09BC1E88CE1E007164E3 /* JYViewControllerOpenDoorTransitioning.m */,
+			);
+			name = Transitioning;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		190B05CB1E8226B200B37E47 /* JYCustomTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190B05F91E8226B200B37E47 /* Build configuration list for PBXNativeTarget "JYCustomTransition" */;
+			buildPhases = (
+				190B05C81E8226B200B37E47 /* Sources */,
+				190B05C91E8226B200B37E47 /* Frameworks */,
+				190B05CA1E8226B200B37E47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYCustomTransition;
+			productName = CustomTransition;
+			productReference = 190B05CC1E8226B200B37E47 /* JYCustomTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		190B05E41E8226B200B37E47 /* JYCustomTransitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190B05FC1E8226B200B37E47 /* Build configuration list for PBXNativeTarget "JYCustomTransitionTests" */;
+			buildPhases = (
+				190B05E11E8226B200B37E47 /* Sources */,
+				190B05E21E8226B200B37E47 /* Frameworks */,
+				190B05E31E8226B200B37E47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190B05E71E8226B200B37E47 /* PBXTargetDependency */,
+			);
+			name = JYCustomTransitionTests;
+			productName = CustomTransitionTests;
+			productReference = 190B05E51E8226B200B37E47 /* JYCustomTransitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		190B05EF1E8226B200B37E47 /* JYCustomTransitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190B05FF1E8226B200B37E47 /* Build configuration list for PBXNativeTarget "JYCustomTransitionUITests" */;
+			buildPhases = (
+				190B05EC1E8226B200B37E47 /* Sources */,
+				190B05ED1E8226B200B37E47 /* Frameworks */,
+				190B05EE1E8226B200B37E47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190B05F21E8226B200B37E47 /* PBXTargetDependency */,
+			);
+			name = JYCustomTransitionUITests;
+			productName = CustomTransitionUITests;
+			productReference = 190B05F01E8226B200B37E47 /* JYCustomTransitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		190B05C41E8226B200B37E47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Jimmy;
+				TargetAttributes = {
+					190B05CB1E8226B200B37E47 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					190B05E41E8226B200B37E47 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 190B05CB1E8226B200B37E47;
+					};
+					190B05EF1E8226B200B37E47 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 190B05CB1E8226B200B37E47;
+					};
+				};
+			};
+			buildConfigurationList = 190B05C71E8226B200B37E47 /* Build configuration list for PBXProject "JYCustomTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 190B05C31E8226B200B37E47;
+			productRefGroup = 190B05CD1E8226B200B37E47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				190B05CB1E8226B200B37E47 /* JYCustomTransition */,
+				190B05E41E8226B200B37E47 /* JYCustomTransitionTests */,
+				190B05EF1E8226B200B37E47 /* JYCustomTransitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		190B05CA1E8226B200B37E47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B05DF1E8226B200B37E47 /* LaunchScreen.storyboard in Resources */,
+				190B05DC1E8226B200B37E47 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B05E31E8226B200B37E47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B05EE1E8226B200B37E47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		190B05C81E8226B200B37E47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B05D41E8226B200B37E47 /* AppDelegate.m in Sources */,
+				19B3ADC01E8396FC0082D1B5 /* JYDoorViewController.m in Sources */,
+				198A09B61E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.m in Sources */,
+				198A09BA1E88CC5D007164E3 /* JYViewControllerPopImageTransitioning.m in Sources */,
+				19B3ADBA1E8382D00082D1B5 /* JYCatalogViewController.m in Sources */,
+				198A09BD1E88CE1E007164E3 /* JYViewControllerOpenDoorTransitioning.m in Sources */,
+				190B06041E822CC700B37E47 /* JYRootViewController.m in Sources */,
+				190B06071E82304E00B37E47 /* UIColor+Utilities.m in Sources */,
+				190B05D11E8226B200B37E47 /* main.m in Sources */,
+				19663ACF1E88C18600819A4E /* JYExpandedPhotoViewController.m in Sources */,
+				19B3ADBD1E8387190082D1B5 /* JYPhotoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B05E11E8226B200B37E47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B05EA1E8226B200B37E47 /* JYCustomTransitionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B05EC1E8226B200B37E47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B05F51E8226B200B37E47 /* JYCustomTransitionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		190B05E71E8226B200B37E47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 190B05CB1E8226B200B37E47 /* JYCustomTransition */;
+			targetProxy = 190B05E61E8226B200B37E47 /* PBXContainerItemProxy */;
+		};
+		190B05F21E8226B200B37E47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 190B05CB1E8226B200B37E47 /* JYCustomTransition */;
+			targetProxy = 190B05F11E8226B200B37E47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		190B05DD1E8226B200B37E47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				190B05DE1E8226B200B37E47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		190B05F71E8226B200B37E47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		190B05F81E8226B200B37E47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		190B05FA1E8226B200B37E47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jimmy.CustomTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		190B05FB1E8226B200B37E47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jimmy.CustomTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		190B05FD1E8226B200B37E47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CustomTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jimmy.CustomTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JYCustomTransition.app/JYCustomTransition";
+			};
+			name = Debug;
+		};
+		190B05FE1E8226B200B37E47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CustomTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jimmy.CustomTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JYCustomTransition.app/JYCustomTransition";
+			};
+			name = Release;
+		};
+		190B06001E8226B200B37E47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CustomTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jimmy.CustomTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CustomTransition;
+			};
+			name = Debug;
+		};
+		190B06011E8226B200B37E47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CustomTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jimmy.CustomTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CustomTransition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		190B05C71E8226B200B37E47 /* Build configuration list for PBXProject "JYCustomTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B05F71E8226B200B37E47 /* Debug */,
+				190B05F81E8226B200B37E47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190B05F91E8226B200B37E47 /* Build configuration list for PBXNativeTarget "JYCustomTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B05FA1E8226B200B37E47 /* Debug */,
+				190B05FB1E8226B200B37E47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190B05FC1E8226B200B37E47 /* Build configuration list for PBXNativeTarget "JYCustomTransitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B05FD1E8226B200B37E47 /* Debug */,
+				190B05FE1E8226B200B37E47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190B05FF1E8226B200B37E47 /* Build configuration list for PBXNativeTarget "JYCustomTransitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B06001E8226B200B37E47 /* Debug */,
+				190B06011E8226B200B37E47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 190B05C41E8226B200B37E47 /* Project object */;
+}
