@@ -27,42 +27,32 @@ NS_ASSUME_NONNULL_BEGIN
   UIImageView *animateImageView = nil;
 
   if ([self state] == JYAnimatedTransitioningPresentation) {
-    [toView setAlpha:0.0];
-    [[(JYExpandedPhotoViewController *)toViewController imageView] setHidden:YES];
-    [containerView addSubview:toView];
+    UIImage *image = [UIImage imageNamed:[(JYExpandedPhotoViewController *)toViewController imageName]];
 
     CGRect finalFrame = [transitionContext finalFrameForViewController:toViewController];
-//    CGRect expandedFrame = CGRectInset(finalFrame, -20.0, -20.0);
-
-    UIImage *image = [UIImage imageNamed:[(JYExpandedPhotoViewController *)toViewController imageName]];
-    CGRect imageRect = [(JYExpandedPhotoViewController *)toViewController imageRect];
-
-    CGRect fixFrame = [self _fixImageRect:imageRect ofImage:image];
+    CGRect initialImageRect = [(JYExpandedPhotoViewController *)toViewController imageRect];
+    CGRect finalImageFrame = [self _clipImageRect:finalFrame ofImage:image];
 
     animateImageView = [[UIImageView alloc] initWithImage:image];
     [animateImageView setContentMode:UIViewContentModeScaleAspectFill];
-    [animateImageView setFrame:imageRect];
+    [animateImageView setClipsToBounds:YES];
     [containerView addSubview:animateImageView];
 
-    [UIView animateKeyframesWithDuration:2.5 delay:0.0 options:(UIViewKeyframeAnimationOptions)UIViewAnimationOptionCurveEaseInOut animations:^{
+    [[(JYExpandedPhotoViewController *)toViewController imageView] setHidden:YES];
+    [toView setAlpha:0.0];
+    [containerView insertSubview:toView belowSubview:animateImageView];
+    [toView setFrame:finalFrame];
 
-      [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.4 animations:^{
-        [toView setAlpha:1.0];
-      }];
+    [animateImageView setFrame:initialImageRect];
 
-      [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.5 animations:^{
-        [animateImageView setFrame:fixFrame];
-      }];
+    [UIView animateKeyframesWithDuration:0.5 delay:0.0 options:UIViewKeyframeAnimationOptionCalculationModeCubic animations:^{
 
       [UIView addKeyframeWithRelativeStartTime:0.5 relativeDuration:0.5 animations:^{
-        [animateImageView setContentMode:UIViewContentModeScaleAspectFit];
-        [animateImageView setFrame:finalFrame];
+        [toView setAlpha:1.0];
       }];
-
-//      [UIView addKeyframeWithRelativeStartTime:0.8 relativeDuration:0.2 animations:^{
-//        [animateImageView setFrame:finalFrame];
-//      }];
-
+      [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.5 animations:^{
+        [animateImageView setFrame:finalImageFrame];
+      }];
     } completion:^(BOOL finished) {
       [animateImageView removeFromSuperview];
 
@@ -71,14 +61,48 @@ NS_ASSUME_NONNULL_BEGIN
       }
       else {
         [[(JYExpandedPhotoViewController *)toViewController imageView] setHidden:NO];
+        [transitionContext completeTransition:YES];
       }
-
-      [transitionContext completeTransition:YES];
     }];
   }
   else {
-    [fromView removeFromSuperview];
-    [transitionContext completeTransition:YES];
+    UIImage *image = [UIImage imageNamed:[(JYExpandedPhotoViewController *)fromViewController imageName]];
+
+    CGRect finalFrame = [transitionContext finalFrameForViewController:toViewController];
+    CGRect initialFrame = [transitionContext initialFrameForViewController:fromViewController];
+
+    [containerView insertSubview:toView belowSubview:fromView];
+    [toView setFrame:finalFrame];
+
+    [[(JYExpandedPhotoViewController *)fromViewController imageView] setHidden:YES];
+    CGRect finalImageRect = [(JYExpandedPhotoViewController *)fromViewController imageRect];
+    CGRect initialImageRect = [self _clipImageRect:initialFrame ofImage:image];
+
+    animateImageView = [[UIImageView alloc] initWithImage:image];
+    [animateImageView setContentMode:UIViewContentModeScaleAspectFill];
+    [animateImageView setClipsToBounds:YES];
+    [containerView addSubview:animateImageView];
+
+    [animateImageView setFrame:initialImageRect];
+
+    [UIView animateKeyframesWithDuration:0.5 delay:0.0 options:UIViewKeyframeAnimationOptionCalculationModeCubic animations:^{
+
+      [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.2 animations:^{
+        [fromView setAlpha:0.0];
+      }];
+      [UIView addKeyframeWithRelativeStartTime:0.2 relativeDuration:0.8 animations:^{
+        [animateImageView setFrame:finalImageRect];
+      }];
+    } completion:^(BOOL finished) {
+      [animateImageView removeFromSuperview];
+
+      if ([transitionContext transitionWasCancelled]) {
+        [toView removeFromSuperview];
+      }
+      else {
+        [transitionContext completeTransition:YES];
+      }
+    }];
   }
 }
 
@@ -92,21 +116,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 }
 
-#pragma mark - 
+#pragma mark -
 
-- (CGRect)_fixImageRect:(CGRect)rect ofImage:(UIImage *)image
+- (CGRect)_clipImageRect:(CGRect)rect ofImage:(UIImage *)image
 {
   CGFloat clipedRatio = rect.size.width / rect.size.height;
   CGFloat imageRatio = image.size.width / image.size.height;
 
-  if (clipedRatio > imageRatio) {
-    //mend width
-    CGFloat mendWidth = floorf(rect.size.width * (imageRatio - 1) / 2);
-    return CGRectInset(rect, -1 * mendWidth, 0.0);
+  if (clipedRatio < imageRatio) {
+    //mend height
+    CGFloat clipHeight = ceilf((rect.size.height - rect.size.width / imageRatio) / 2);
+    return CGRectInset(rect, 0.0, clipHeight);
   }
   else {
-    CGFloat mendHeight = (floorf(rect.size.width / imageRatio) - rect.size.height) / 2;
-    return CGRectInset(rect, 0.0, -1 * mendHeight);
+    CGFloat clipWidth = ceilf((rect.size.width - rect.size.height * imageRatio) / 2);
+    return CGRectInset(rect, clipWidth, 0.0);
   }
 }
 
