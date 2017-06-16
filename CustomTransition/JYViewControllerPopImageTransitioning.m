@@ -19,11 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
   UIView *containerView = [transitionContext containerView];
-
   UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
   UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
   UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
   UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+
   UIImageView *animateImageView = nil;
 
   if ([self state] == JYAnimatedTransitioningPresentation) {
@@ -108,7 +108,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSTimeInterval)transitionDuration:(nullable id<UIViewControllerContextTransitioning>)transitionContext
 {
-  return 0.0;
+  return 0.5;
 }
 
 - (void)animationEnded:(BOOL)transitionCompleted

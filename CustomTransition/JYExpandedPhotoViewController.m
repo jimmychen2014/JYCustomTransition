@@ -9,7 +9,6 @@
 #import "JYExpandedPhotoViewController.h"
 
 #import "UIViewController+JYAnimatedTransitioning.h"
-#import "UIColor+Utilities.h"
 
 @interface JYExpandedPhotoViewController () <UIGestureRecognizerDelegate> {
   UIButton *_closeButton;
@@ -39,7 +38,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  [[self view] setBackgroundColor:[UIColor colorWithHex:0x000000]];
+  [[self view] setBackgroundColor:[UIColor blackColor]];
 
   _tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_handleTapGestureRecognizer:)];
   [_tapGestureRecognizer setDelegate:self];

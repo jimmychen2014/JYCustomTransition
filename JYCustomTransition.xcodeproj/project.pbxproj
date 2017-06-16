@@ -14,7 +14,7 @@
 		190B05EA1E8226B200B37E47 /* JYCustomTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B05E91E8226B200B37E47 /* JYCustomTransitionTests.m */; };
 		190B05F51E8226B200B37E47 /* JYCustomTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B05F41E8226B200B37E47 /* JYCustomTransitionUITests.m */; };
 		190B06041E822CC700B37E47 /* JYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B06031E822CC700B37E47 /* JYRootViewController.m */; };
-		190B06071E82304E00B37E47 /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B06061E82304E00B37E47 /* UIColor+Utilities.m */; };
+		1940A86C1EA497CB008071A0 /* JYIndoorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1940A86B1EA497CB008071A0 /* JYIndoorViewController.m */; };
 		19663ACF1E88C18600819A4E /* JYExpandedPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19663ACE1E88C18600819A4E /* JYExpandedPhotoViewController.m */; };
 		198A09B61E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 198A09B51E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.m */; };
 		198A09BA1E88CC5D007164E3 /* JYViewControllerPopImageTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 198A09B91E88CC5D007164E3 /* JYViewControllerPopImageTransitioning.m */; };
@@ -57,8 +57,8 @@
 		190B05F61E8226B200B37E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		190B06021E822CC700B37E47 /* JYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYRootViewController.h; sourceTree = "<group>"; };
 		190B06031E822CC700B37E47 /* JYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYRootViewController.m; sourceTree = "<group>"; };
-		190B06051E82304E00B37E47 /* UIColor+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utilities.h"; sourceTree = "<group>"; };
-		190B06061E82304E00B37E47 /* UIColor+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utilities.m"; sourceTree = "<group>"; };
+		1940A86A1EA497CB008071A0 /* JYIndoorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYIndoorViewController.h; sourceTree = "<group>"; };
+		1940A86B1EA497CB008071A0 /* JYIndoorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYIndoorViewController.m; sourceTree = "<group>"; };
 		19663ACD1E88C18600819A4E /* JYExpandedPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYExpandedPhotoViewController.h; sourceTree = "<group>"; };
 		19663ACE1E88C18600819A4E /* JYExpandedPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYExpandedPhotoViewController.m; sourceTree = "<group>"; };
 		198A09B41E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JYAnimatedTransitioning.h"; sourceTree = "<group>"; };
@@ -139,8 +139,8 @@
 				19663ACE1E88C18600819A4E /* JYExpandedPhotoViewController.m */,
 				19B3ADBE1E8396FC0082D1B5 /* JYDoorViewController.h */,
 				19B3ADBF1E8396FC0082D1B5 /* JYDoorViewController.m */,
-				190B06051E82304E00B37E47 /* UIColor+Utilities.h */,
-				190B06061E82304E00B37E47 /* UIColor+Utilities.m */,
+				1940A86A1EA497CB008071A0 /* JYIndoorViewController.h */,
+				1940A86B1EA497CB008071A0 /* JYIndoorViewController.m */,
 				198A09B71E88CC04007164E3 /* Transitioning */,
 			);
 			name = JYCustomTransition;
@@ -320,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1940A86C1EA497CB008071A0 /* JYIndoorViewController.m in Sources */,
 				190B05D41E8226B200B37E47 /* AppDelegate.m in Sources */,
 				19B3ADC01E8396FC0082D1B5 /* JYDoorViewController.m in Sources */,
 				198A09B61E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.m in Sources */,
@@ -327,7 +328,6 @@
 				19B3ADBA1E8382D00082D1B5 /* JYCatalogViewController.m in Sources */,
 				198A09BD1E88CE1E007164E3 /* JYViewControllerOpenDoorTransitioning.m in Sources */,
 				190B06041E822CC700B37E47 /* JYRootViewController.m in Sources */,
-				190B06071E82304E00B37E47 /* UIColor+Utilities.m in Sources */,
 				190B05D11E8226B200B37E47 /* main.m in Sources */,
 				19663ACF1E88C18600819A4E /* JYExpandedPhotoViewController.m in Sources */,
 				19B3ADBD1E8387190082D1B5 /* JYPhotoViewController.m in Sources */,

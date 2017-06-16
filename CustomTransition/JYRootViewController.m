@@ -8,7 +8,6 @@
 
 #import "JYRootViewController.h"
 
-#import "UIColor+Utilities.h"
 #import "JYCatalogViewController.h"
 
 #import <UIKit/UIKit.h>
@@ -34,6 +33,8 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+
+  [[self view] setBackgroundColor:[UIColor whiteColor]];
 }
 
 @end

@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, JYCustomTransitionStyle) {
   JYCustomTransitionStylePopImage = 0,
-  JYCustomTransitionStyleOpenDoor
+  JYCustomTransitionStyleOpenDoor,
+  JYCustomTransitionStyleMemo
 };
 
 typedef NS_ENUM(NSUInteger, JYAnimatedTransitioningState) {

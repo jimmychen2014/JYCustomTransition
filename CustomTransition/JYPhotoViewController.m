@@ -8,7 +8,6 @@
 
 #import "JYPhotoViewController.h"
 
-#import "UIColor+Utilities.h"
 #import "JYExpandedPhotoViewController.h"
 
 @interface PhotoCell : UICollectionViewCell
@@ -46,7 +45,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  [[self view] setBackgroundColor:[UIColor colorWithHex:0xF8F8F8]];
+  [[self view] setBackgroundColor:[UIColor whiteColor]];
   [self setTitle:@"照片效果"];
 
   [[self collectionView] reloadData];

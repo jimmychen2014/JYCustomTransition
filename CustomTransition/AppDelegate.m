@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 
 #import "JYRootViewController.h"
-#import "UIColor+Utilities.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
-  [[self window] setBackgroundColor:[UIColor colorWithHex:0xF8F8F8]];
+  [[self window] setBackgroundColor:[UIColor whiteColor]];
   [[self window] setRootViewController:[[JYRootViewController alloc] init]];
   [[self window] makeKeyAndVisible];
 

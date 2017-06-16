@@ -8,8 +8,6 @@
 
 #import "JYCatalogViewController.h"
 
-
-#import "UIColor+Utilities.h"
 #import "UIViewController+JYAnimatedTransitioning.h"
 #import "JYPhotoViewController.h"
 #import "JYDoorViewController.h"
@@ -45,8 +43,9 @@
   [[[_tableView bottomAnchor] constraintEqualToAnchor:[[self view] bottomAnchor]] setActive:YES];
 
   _demoArray = @[
-                 @{@(JYCustomTransitionStylePopImage): @"苹果相册"},
-                 @{@(JYCustomTransitionStyleOpenDoor): @"开门"}
+                 @{@(JYCustomTransitionStylePopImage): @"相册"},
+                 @{@(JYCustomTransitionStyleOpenDoor): @"开门"},
+                 @{@(JYCustomTransitionStyleMemo): @"便笺"}
                  ];
 }
 
@@ -54,7 +53,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-  return NSUINTEGER_C(1);
+  return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

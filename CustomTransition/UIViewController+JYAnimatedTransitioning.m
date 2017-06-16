@@ -67,7 +67,6 @@ NS_ASSUME_NONNULL_BEGIN
   [animatedTransition setState:JYAnimatedTransitioningDismiss];
 
   return animatedTransition;
-  return nil;
 }
 
 @end
