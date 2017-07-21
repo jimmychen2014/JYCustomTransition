@@ -22,6 +22,8 @@
 		19B3ADBA1E8382D00082D1B5 /* JYCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3ADB91E8382D00082D1B5 /* JYCatalogViewController.m */; };
 		19B3ADBD1E8387190082D1B5 /* JYPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3ADBC1E8387190082D1B5 /* JYPhotoViewController.m */; };
 		19B3ADC01E8396FC0082D1B5 /* JYDoorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3ADBF1E8396FC0082D1B5 /* JYDoorViewController.m */; };
+		19C5C1201F1F63C1002FFD5A /* JYMemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C5C11F1F1F63C1002FFD5A /* JYMemoViewController.m */; };
+		19C5C1231F1F63CC002FFD5A /* JYNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C5C1221F1F63CC002FFD5A /* JYNoteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		19B3ADBC1E8387190082D1B5 /* JYPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPhotoViewController.m; sourceTree = "<group>"; };
 		19B3ADBE1E8396FC0082D1B5 /* JYDoorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYDoorViewController.h; sourceTree = "<group>"; };
 		19B3ADBF1E8396FC0082D1B5 /* JYDoorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYDoorViewController.m; sourceTree = "<group>"; };
+		19C5C11E1F1F63B9002FFD5A /* JYMemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYMemoViewController.h; sourceTree = "<group>"; };
+		19C5C11F1F1F63C1002FFD5A /* JYMemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYMemoViewController.m; sourceTree = "<group>"; };
+		19C5C1211F1F63CC002FFD5A /* JYNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYNoteViewController.h; sourceTree = "<group>"; };
+		19C5C1221F1F63CC002FFD5A /* JYNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYNoteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,10 @@
 				19B3ADBF1E8396FC0082D1B5 /* JYDoorViewController.m */,
 				1940A86A1EA497CB008071A0 /* JYIndoorViewController.h */,
 				1940A86B1EA497CB008071A0 /* JYIndoorViewController.m */,
+				19C5C11E1F1F63B9002FFD5A /* JYMemoViewController.h */,
+				19C5C11F1F1F63C1002FFD5A /* JYMemoViewController.m */,
+				19C5C1211F1F63CC002FFD5A /* JYNoteViewController.h */,
+				19C5C1221F1F63CC002FFD5A /* JYNoteViewController.m */,
 				198A09B71E88CC04007164E3 /* Transitioning */,
 			);
 			name = JYCustomTransition;
@@ -255,7 +265,7 @@
 				TargetAttributes = {
 					190B05CB1E8226B200B37E47 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					190B05E41E8226B200B37E47 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -321,8 +331,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1940A86C1EA497CB008071A0 /* JYIndoorViewController.m in Sources */,
+				19C5C1201F1F63C1002FFD5A /* JYMemoViewController.m in Sources */,
 				190B05D41E8226B200B37E47 /* AppDelegate.m in Sources */,
 				19B3ADC01E8396FC0082D1B5 /* JYDoorViewController.m in Sources */,
+				19C5C1231F1F63CC002FFD5A /* JYNoteViewController.m in Sources */,
 				198A09B61E88C9F4007164E3 /* UIViewController+JYAnimatedTransitioning.m in Sources */,
 				198A09BA1E88CC5D007164E3 /* JYViewControllerPopImageTransitioning.m in Sources */,
 				19B3ADBA1E8382D00082D1B5 /* JYCatalogViewController.m in Sources */,

@@ -11,6 +11,7 @@
 #import "UIViewController+JYAnimatedTransitioning.h"
 #import "JYPhotoViewController.h"
 #import "JYDoorViewController.h"
+#import "JYNoteViewController.h"
 
 @interface JYCatalogViewController () <UITableViewDelegate, UITableViewDataSource> {
 @private
@@ -83,7 +84,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   JYCustomTransitionStyle style = [[[_demoArray[[indexPath row]] allKeys] firstObject] unsignedIntegerValue];
-//  UICollectionViewLayout *layout = [[UICollectionViewLayout alloc] init];
+  
   UIViewController *toViewController = nil;
   switch (style) {
   case JYCustomTransitionStylePopImage:
@@ -94,6 +95,8 @@
     toViewController = [[JYDoorViewController alloc] initWithNibName:nil bundle:nil];
     break;
 
+    case JYCustomTransitionStyleMemo:
+      toViewController = [[JYNoteViewController alloc] initWithNibName:nil bundle:nil];
   default:
     break;
   }
